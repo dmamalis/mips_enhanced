@@ -1,0 +1,58 @@
+#:C9     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   SPARC M2.1 L.57
+#Current Working Directory:
+#:D   /home/dimamali/Project/grlib-gpl-1.0.19-b3188/designs/leon3-gr-xc3s-1500
+#Host Name:
+#:H   dimamali-desktop
+#Date/Time:
+#:T   Thu Nov  5 19:20:10 2009
+#------------------------------
+	#Reading leon3mp.ncd...
+	#Loading device for application Rf_Device from file '3s1500.nph' in environment /opt/Xilinx/11.1/ISE.
+	#   "leon3mp" is an NCD, version 3.2, device xc3s1500, package fg456, speed -4
+	#Building chip graphics...
+	#New memory-reduced route layer graphics is turned on.
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+select net 'dcomgen.dcom0/dcom0/N4'
+	#net "dcomgen.dcom0/dcom0/N4"
+	#4
+unselect -all
+	#5
+select net 'dcomgen.dcom0/dcom0/N4'
+	#net "dcomgen.dcom0/dcom0/N4"
+	#6
+post block
+	#ERROR:FPGAEditor:79 - The "post block" command without any other arguments cannot
+	#be performed unless the selection contains only a single site
+	#or single component.  Change the selection and try again.
+	#7
+unselect -all
+	#8
+select comp 'dcomgen.dcom0/dcom0/r.addr_2'
+	#comp "dcomgen.dcom0/dcom0/r.addr_2",  site "SLICE_X51Y64",  type = SLICEL  (RPM grid X78Y134)
+	#9
+unselect -all
+	#10
+select comp 'dcomgen.dcom0/dcom0/r.addr_2'
+	#comp "dcomgen.dcom0/dcom0/r.addr_2",  site "SLICE_X51Y64",  type = SLICEL  (RPM grid X78Y134)
+	#11
+post block
+	#12
+unselect -all
+	#13
+select comp 'dcomgen.dcom0/dcom0/v_addr_12_mux00025'
+	#comp "dcomgen.dcom0/dcom0/v_addr_12_mux00025",  site "SLICE_X49Y67",  type = SLICEL  (RPM grid X75Y139)
+	#14
+unselect -all
+	#15
+select comp 'dcomgen.dcom0/dcom0/v_addr_12_mux00025'
+	#comp "dcomgen.dcom0/dcom0/v_addr_12_mux00025",  site "SLICE_X49Y67",  type = SLICEL  (RPM grid X75Y139)
+	#16
+post block
